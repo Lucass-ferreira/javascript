@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Pais</title>
+</head>
+<body>
+    <h1>Sistema de Pais</h1>
+    <label for="ipais">De onde voçê é? </label>
+    <input type="text" name="pais" id="ipais">
+    
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var pais = window.document.getElementById('ipais')
+            var res = window.document.querySelector('div#res')
+            var paises = (pais.value)
+            res.innerHTML = `<p>Vivendo em <strong>${paises}</strong></p>`
+            if(paises == 'Brasil') {
+                res.innerHTML += `<p>Voçê é Brasileiro</p>`
+            } else {
+                res.innerHTML += `<p>Voçê é estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
