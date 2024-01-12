@@ -20,7 +20,7 @@ header h1{
 section{
     background-color: white;
     width: 80vw;
-    height: 400px;
+    height: 320px;
     display: block;
     margin: auto;
     border-radius: 10px;
@@ -34,8 +34,6 @@ section > div > p {
 }
 
 section img{
-    height: 300px;
-    width: 300px;  
     border-radius: 50%;
     display: block;
     margin: auto;
@@ -46,4 +44,16 @@ footer p{
     padding: 30px;
     color: white;
     font-size: 1.2em;
+}
+
+@media screen and (min-width: 768px) {
+    section{
+        width: 800px;
+        height: 400px;
+    }
+
+    img{
+        height: 300px;
+        width: 300px;
+    }
 }
