@@ -13,21 +13,25 @@
     </header>
     <section>
         <div>
-                <p>
-                    <label for="inasc">Ano de Nascimento:<label>
-                    <input type="number" name="nasc" id="inasc" autocomplete="on" required min="1900" max="2024">
-                </p>
-                <p>
-                    <label for="isexo">Sexo:</label>
-                    <input type="radio" name="sexo" id="msexo" required autocomplete="on"> <label for="msexo">Masculino</label>
-                    <input type="radio" name="sexo" id="fsexo" required autocomplete="on"> <label for="fsexo">Feminino</label>
-                </p>
-                <p><input type="submit" value="Verificar" onclick="clicar()"></p>
+            <p>
+                <label for="inasc">Ano de Nascimento:<label>
+                <input type="number" name="nasc" id="inasc" autocomplete="on" required min="1900" max="2024">
+            </p>
+            <p>
+                Sexo: 
+                <input type="radio" name="sexo" id="msexo" checked autocomplete="on"> 
+                <label for="msexo">Masculino</label>
+                <input type="radio" name="sexo" id="fsexo" autocomplete="on"> 
+                <label for="fsexo">Feminino</label>
+            </p>
+            <p><input type="button" value="Verificar" onclick="verificar()"></p>
         </div>
-        <div id="res">Prencha os dados para ver o resultado!</div>
+        <div id="res">
+            <p>Prencha os dados para ver o resultado!</p>
+        </div>
     </section>
     <footer>
-        <p><span class="material-icons">copyright</span><em>CursoemVideo</em></p>
+        <p>&copy; <em>CursoemVideo</em></p>
     </footer>
     <script src="script/JavaScript.js"></script>
 </body>
