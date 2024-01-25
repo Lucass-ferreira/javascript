@@ -19,20 +19,21 @@ header h1{
 }
 
 section{
-    
     background-color: white;
-    width: 80vw;
-    height: 260px;
+    width: 450px;
+    height: 200px;
     display: block;
     margin: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.281);
 }
 
+section input {
+    width: 100px;
+}
+
 section > div > p {
-    padding: 25px;
-    text-align: center;
-    font-size: 1.3em;
+    padding: 10px;
 }
 
 footer p{
