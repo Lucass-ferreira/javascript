@@ -21,7 +21,6 @@ header h1{
 section{
     background-color: white;
     width: 450px;
-    height: 200px;
     display: block;
     margin: auto;
     border-radius: 10px;
@@ -33,6 +32,10 @@ section input {
 }
 
 section > div > p {
+    padding: 10px;
+}
+
+div#resp{
     padding: 10px;
 }
 
