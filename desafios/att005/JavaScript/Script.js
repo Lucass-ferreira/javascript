@@ -57,6 +57,6 @@ function finalizar() {
         resp.innerHTML += `<p> - O maior valor digitado foi ${max}</p>`
         resp.innerHTML += `<p> - O menor valor digitado foi ${min}</p>`
         resp.innerHTML += `<p> - Somando todos os valores, temos ${soma}</p>`
-        resp.innerHTML += `<p> - A média dos valores digitados é ${media}</p>`
+        resp.innerHTML += `<p> - A média dos valores digitados é ${media.toFixed(2)}</p>`
     }
 }
