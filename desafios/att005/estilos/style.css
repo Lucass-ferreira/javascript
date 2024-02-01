@@ -8,21 +8,21 @@
 
 body{
     background-color: #1e5eb8;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 header h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8em;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     color: white;
 }
 
 section{
     padding: 10px;
     background-color: white;
-    width: 312px;
+    width: 272px;
     display: block;
     margin: auto;
     border-radius: 10px;
@@ -30,7 +30,6 @@ section{
 }
 
 section p {
-    
     padding: 5px;
 }
 
@@ -40,7 +39,8 @@ section select{
 }
 
 section input {
-    padding: 5px;
+    width: 68.5px;
+    padding: 2px;
 }
 
 section input#inumero {
