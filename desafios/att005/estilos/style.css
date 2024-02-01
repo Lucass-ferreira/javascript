@@ -8,11 +8,12 @@
 
 body{
     background-color: #1e5eb8;
+    font-size: 13px;
 }
 
 header h1{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.2em;
+    font-size: 1.8em;
     text-align: center;
     padding: 20px;
     color: white;
@@ -21,7 +22,7 @@ header h1{
 section{
     padding: 10px;
     background-color: white;
-    width: 350px;
+    width: 312px;
     display: block;
     margin: auto;
     border-radius: 10px;
@@ -29,7 +30,7 @@ section{
 }
 
 section p {
-    font-size: 14px;
+    
     padding: 5px;
 }
 
@@ -38,21 +39,25 @@ section select{
     padding: 5px;
 }
 
-input {
+section input {
     padding: 5px;
+}
+
+section input#inumero {
+    width: 40px;
 }
 
 footer p{
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     color: white;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 @media screen and (min-width: 768px) {
 
     section {
-        width: 450px;
+        width: 400px;
     }
 
     section p {
