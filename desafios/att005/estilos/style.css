@@ -8,7 +8,6 @@
 
 body{
     background-color: #1e5eb8;
-    font-size: 18px;
 }
 
 header h1{
@@ -22,7 +21,7 @@ header h1{
 section{
     padding: 10px;
     background-color: white;
-    width: 80vw;
+    width: 350px;
     display: block;
     margin: auto;
     border-radius: 10px;
@@ -30,7 +29,8 @@ section{
 }
 
 section p {
-    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+    padding: 5px;
 }
 
 section select{
@@ -47,4 +47,15 @@ footer p{
     padding: 30px;
     color: white;
     font-size: 1.2em;
+}
+
+@media screen and (min-width: 768px) {
+
+    section {
+        width: 450px;
+    }
+
+    section p {
+        font-size: 18px;
+    }
 }
