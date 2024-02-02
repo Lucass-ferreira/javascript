@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de idade</title>
+    <title>Verificador de Idade</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
-        <h1>Verificador de idade</h1>
+        <h1>Verificador de Idade</h1>
     </header>
     <section>
         <div>
             <p>
                 <label for="inasc">Ano de Nascimento:<label>
-                <input type="number" name="nasc" id="inasc" autocomplete="on" required min="1900" max="2024">
+                <input type="number" name="nasc" class="botao" id="inasc" autocomplete="on" min="1900" max="2024">
             </p>
+
             <p>
-                Sexo: 
-                <input type="radio" name="sexo" id="msexo" checked autocomplete="on"> 
+                Sexo:
+                <input type="radio" name="sexo" id="msexo" checked autocomplete="on">
                 <label for="msexo">Masculino</label>
-                <input type="radio" name="sexo" id="fsexo" autocomplete="on"> 
+                <input type="radio" name="sexo" id="fsexo" autocomplete="on">
                 <label for="fsexo">Feminino</label>
             </p>
-            <p><input type="button" value="Verificar" onclick="verificar()"></p>
+
+            <p><input type="button" class="botao" value="Verificar" onclick="verificar()"></p>
         </div>
         <div id="res">
             <p>Prencha os dados para ver o resultado!</p>
