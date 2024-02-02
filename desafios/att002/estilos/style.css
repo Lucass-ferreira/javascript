@@ -20,7 +20,7 @@ header {
 
 section{
     background-color: white;
-    width: 70vw;
+    width: 55vw;
     margin: auto;
     margin-top: 20px;
     padding: 10px;
@@ -62,6 +62,16 @@ img {
     border-radius: 50%;
     width: 170px;
     height: 170px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    html {
+        font-size: 1em;
+    }
+
+    section {
+        width: 300px;
+    }
 }
 
 @media screen and (min-width: 768px) {
