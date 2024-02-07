@@ -7,29 +7,54 @@
 }
 
 body{
-    background-color: #3a80e2;
+    background-color: #1e38b8;
+    font-size: 1.3em;
 }
 
 header h1{
     text-align: center;
     padding: 20px;
-    font-size: 3em;
+    font-size: 2.5em;
     color: white;
 }
 
 section{
     padding: 10px;
     background-color: white;
-    width: 80vw;
+    width: 286px;
     display: block;
     margin: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.281);
 }
 
+section input{
+    padding: 7px;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: rgba(30, 56, 184, 0.804);
+    color: rgba(255, 255, 255, 0.859);
+    border: 1px solid rgba(30, 56, 184, 0.804);
+}
+
+section input:hover {
+    background-color: #1e38b8;
+    border: 1px solid #1e38b8;
+}
+
+section input#inumero {
+    width: 50px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
 div select{
-    margin-top: 5px;
-    padding: 5px;
+    font-size: 17px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
 footer p{
