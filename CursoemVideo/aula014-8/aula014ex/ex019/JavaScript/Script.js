@@ -1,6 +1,6 @@
 function clicar() {
     var numero = window.document.querySelector('input#inumero')
-    var resp = window.document.querySelector('select#itabuada')
+   var resp = window.document.querySelector('select#itabuada')
     var num = Number(numero.value)
 
     if (numero.value.length == 0) {
