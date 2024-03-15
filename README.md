@@ -13,5 +13,5 @@ Projeto Contador: [Contador](https://lucass-ferreira.github.io/javascript/execic
 
 Projeto Tabuada: [Tabuada](https://lucass-ferreira.github.io/javascript/execicios/aula014-8/aula014ex/ex019/ex019.html)
 
-Projeto Analisador: [Analisador de números](https://lucass-ferreira.github.io/javascript/execicios/aula016-10/aula016ex/ex022/ex022.html)
+Projeto Analisador: [Analisador de números](https://lucass-ferreira.github.io/javascript/execicios/aula016-10/aula16ex/ex022/ex022.html)
 
