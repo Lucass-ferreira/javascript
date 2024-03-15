@@ -1,5 +1,5 @@
 # javascript
-Curso de JavaScript do CursoemVideo
+Curso introdutório de JavaScript do CursoemVideo
 
 ---
 
