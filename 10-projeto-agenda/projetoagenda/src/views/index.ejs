@@ -1,0 +1,54 @@
+<%- include('includes/head.ejs') %>
+<%- include('includes/nav.ejs') %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-8 my-3">
+            <h1 class="text-center">Agenda</h1>
+            <p class="text-center lead">Seus contatos estão abaixo</p>
+
+            <%- include('includes/messages.ejs') %>
+
+            <% if(contatos.length > 0) { %>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                      <thead class="table-primary">
+                            <tr>
+                                <th>Nome</th>
+                                <th>Sobrenome</th>
+                                <th>E-mail</th>
+                                <th>Telefone</th>
+                                <th colspan="2" class="text-center">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% contatos.forEach(contato => { %>
+                            <tr>
+                                <td><%= contato.nome %></td>
+                                <td><%= contato.sobrenome %></td>
+                                <td><%= contato.email %></td>
+                                <td><%= contato.telefone %></td>
+                                <td class="text-center">
+                                    <div class="d-flex justify-content-center gap-3">
+                                        <a href="/contato/<%= contato._id %>" title="Editar"><i class="bi bi-pencil-fill"></i></a>
+                                        <a class="text-danger" href="/contato/delete/<%= contato._id %>" title="Excluir"><i class="bi bi-trash-fill"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <% }); %>
+                        </tbody>
+                </table>
+            </div>
+            <% } else { %>
+                <p class="text-center lead">Não existem contatos na sua agenda.</p>
+            <% }%>
+
+        </div>
+
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+
+<%- include('includes/footer.ejs') %>
