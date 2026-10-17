@@ -1,0 +1,64 @@
+<%- include('includes/head.ejs') %>
+<%- include('includes/nav.ejs') %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-8 my-3">
+            <h1 class="text-center">Contato</h1>
+            <p class="text-center lead">Crie ou edite seu contato abaixo</p>
+
+            <%- include('includes/messages.ejs') %>
+
+        <% if(contato._id) { %>
+        <form class="form-editContato" action="/contato/edit/<%= contato._id %>" method="POST">   
+        <% } else { %>
+        <form class="form-addContato" action="/contato/register" method="POST">   
+        <% } %>
+
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nome</label>
+            <input value="<%= contato.nome %>" type="text" class="form-control" name="nome">
+            <div class="invalid-feedback">Digite um nome valido. ( precisa conter apenas letras e ter mais de 3 caracteres )</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Sobrenome</label>
+            <input value="<%= contato.sobrenome %>" type="text" class="form-control" name="sobrenome">
+            <div class="invalid-feedback">Digite um sobrenome valido.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">E-mail <span class="text-secondary">(opcional)</span></label>
+            <input value="<%= contato.email %>"type="text" class="form-control" name="email" placeholder="Email@gmail.com">
+            <div class="invalid-feedback">Digite um e-mail valido.</div>
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Telefone <span class="text-secondary">(opcional)</span></label>
+            <input value="<%= contato.telefone %>" type="tel" class="form-control" name="telefone" placeholder="(11) 11111-2222">
+            <div class="invalid-feedback">Digite um numero de telefone valido.</div>
+
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row align-items-center gap-2">
+            <% if(contato._id) { %>
+                <button type="submit" class="btn btn-primary px-5 px-sm-3">
+                    Salvar
+                </button>
+            <% } else { %>
+                <button type="submit" class="btn btn-primary px-5 px-sm-3">
+                    Adicionar
+                </button>
+            <% } %>
+        </div>
+    </form>
+
+        </div>
+
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+
+<%- include('includes/footer.ejs') %>
