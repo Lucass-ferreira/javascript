@@ -27,7 +27,8 @@
     "libphonenumber-js": "^1.13.15",
     "mongoose": "^9.10.2",
     "regenerator-runtime": "^0.14.1",
-    "style-loader": "^4.0.0"
+    "style-loader": "^4.0.0",
+    "validator": "^13.15.35"
   },
   "devDependencies": {
     "@babel/cli": "^7.29.7",
