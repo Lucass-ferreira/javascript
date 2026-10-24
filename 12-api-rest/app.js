@@ -24,3 +24,6 @@ class App {
 };
 
 export default new App().app;
+
+const num = 1;
+console.log(num);
