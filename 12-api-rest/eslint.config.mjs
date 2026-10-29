@@ -25,8 +25,8 @@ export default defineConfig([
             curly: ["error", "all"],
             "no-var": "error",
             "prefer-const": "error",
-
-            "class-methods-use-this": "off"
+            "class-methods-use-this": "off",
+            "no-unused-vars": "off",
         },
     },
 ]);
